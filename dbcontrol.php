@@ -29,6 +29,6 @@
             }
         }
     }
-    $my_db = new db("root","","book",true);
-    $my_db->query("select * from api");
+   // $my_db = new db("root","","book",true);
+   // $my_db->query("select * from api");
 ?>
