@@ -11,7 +11,7 @@
     }
 
     function get_data(){
-        $my_db = new db("root","","book",true);
+        $my_db = new db("root","","book",false);
         $data = $my_db->query("select * from api");
         echo json_encode($data);
     }
