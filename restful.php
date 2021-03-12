@@ -19,7 +19,7 @@
             m = document.getElementById("out");
             text="<table border='1'>";
             for(i=0;i<my.length;i++){
-                text+"<tr>";
+                text+="<tr>";
                 for(key in my[i]){
                 text+="<td>"+my[i][key]+"</td>";
                 }
