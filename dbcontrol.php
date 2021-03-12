@@ -4,6 +4,7 @@
         private $debug_mode;
 
     public function connect($user,$pass,$db,$debug){
+        $this->debug_mode = $debug;
         $this->db = mysqli("localhost",$user,$pass,$db);
         if($this->db->connect_errno){
             echo "Database connect fail {$this->db->connect_error}";
@@ -25,5 +26,7 @@
             echo $text;
         }
     }
+
+    $my_db = new db("localhost","root","",true);
 
 ?>
