@@ -18,7 +18,7 @@
             console.log(data);
             }
         }
-        xhttp.open("GET","reset.php",true);
+        xhttp.open("GET","rest.php",true);
         xhttp.send();
     }
     </script>
